@@ -1,0 +1,11 @@
+.head {
+  height: 45px;
+  background: #151515;
+}
+.head__img {
+  width: 160px;
+}
+
+.nav {
+  display: none;
+}
