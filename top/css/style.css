@@ -101,7 +101,7 @@ p {
   font-size: 16px;
 }
 
-/* 最新情報 */
+/* 最新情報（section-news） */
 .news {
   background: #151515;
 }
@@ -136,3 +136,62 @@ p {
   background: #FF4343;
 }
 
+/* わいず祭りについて（section-about） */
+
+.about {
+  background: #840E0E;
+  position: relative;
+}
+
+.about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  border-style: solid;
+  border-color: #151515 transparent transparent transparent;
+  border-top-width: 45px;
+  border-right-width: 100vw;
+}
+
+.about::after {
+  content: "";
+  position: absolute;
+  bottom: -45px;
+  border-style: solid;
+  border-color: #840E0E transparent transparent transparent;
+  border-top-width: 45px;
+  border-right-width: 100vw;
+}
+
+.about > p {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.about > p:last-of-type {
+  margin-bottom: 60px;
+}
+
+.about > button {
+  width: 122px;
+  display: block;
+  margin: 0 auto;
+  padding: 7px 35px 7px 10px;
+  border: 1px solid #D5D5D5;
+  color: #D5D5D5;
+  font-size: 14px;
+}
+
+button::after {
+  content: "\03e";
+  position: absolute;
+  right: 24.5px;
+}
+
+/* アイキャッチ画像 */
+.eye-chatching {
+  height: 300px;
+  opacity: .8;
+  z-index: -1;
+}
