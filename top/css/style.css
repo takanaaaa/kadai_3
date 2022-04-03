@@ -47,6 +47,7 @@ p {
   transform: translateY(-50%);
 }
 
+/* ハンバーガーメニュー */
 .hamburger {
   width: 40px;
   height: 20px;
@@ -80,10 +81,12 @@ p {
   transform: translateX(100%);
 }
 
+/* ナビゲーション */
 nav {
   display: none;
 }
 
+/* スライダー */
 .js-slider {
   padding: 0;
 }
@@ -112,39 +115,12 @@ img {
   opacity: 1;
 }
 
-/* 最新情報（section-news） */
+/* セクション */
 .news,
 .blog {
   background: #151515;
 }
 
-.list__item {
-  margin: 0 25px 30px;
-}
-
-.list__item:last-child {
-  margin-bottom: 0;
-}
-
-.list__item > span {
-  margin-bottom: 16px;
-}
-
-.list__item > span:last-of-type {
-  margin-right:0px;
-}
-
-.list__item--date {
-  display: inline-block;
-  margin-bottom: 16px;
-}
-
-.list__item--icon {
-  padding: 0 5px;
-  background: #FF4343;
-}
-
-/* わいず祭りについて（section-about） */
 .about,
 .service,
 .access {
@@ -200,6 +176,34 @@ img {
   border-color: #151515 transparent transparent transparent;
 }
 
+/* 最新情報（section-news） */
+.list__item {
+  margin: 0 25px 30px;
+}
+
+.list__item:last-child {
+  margin-bottom: 0;
+}
+
+.list__item > span {
+  margin-bottom: 16px;
+}
+
+.list__item > span:last-of-type {
+  margin-right:0px;
+}
+
+.list__item--date {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.list__item--icon {
+  padding: 0 5px;
+  background: #FF4343;
+}
+
+/* わいず祭りについて（section-about） */
 .about > p {
   font-size: 14px;
   text-align: center;
@@ -210,6 +214,7 @@ img {
   margin-bottom: 60px;
 }
 
+/* ボタン */
 .about > button,
 .service > button,
 .blog > button {
@@ -250,6 +255,7 @@ button::after {
   padding-top: 45px;
   padding-bottom: 45px;
 }
+
 .service > p {
   display: block;
   width: 325px;
@@ -272,6 +278,7 @@ button::after {
   padding-top: 40px;
   position: relative;
 }
+
 .card {
   width: 325px;
   padding: 25px 25px 30px;
