@@ -7,6 +7,7 @@ section {
 }
 
 h1,
+h2,
 p,
 span {
   color: #f4f4f4;
@@ -18,13 +19,18 @@ h1 {
   margin-bottom: 30px;
 }
 
+h2 {
+  font-size: 16px;
+  text-decoration: underline;
+}
+
 span {
   font-size: 14px;
   margin-right: 14px;
 }
 
 p {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .head {
@@ -107,7 +113,8 @@ img {
 }
 
 /* 最新情報（section-news） */
-.news {
+.news,
+.blog {
   background: #151515;
 }
 
@@ -127,10 +134,6 @@ img {
   margin-right:0px;
 }
 
-.list__item > p {
-  text-decoration: underline;
-}
-
 .list__item--date {
   display: inline-block;
   margin-bottom: 16px;
@@ -142,7 +145,6 @@ img {
 }
 
 /* わいず祭りについて（section-about） */
-
 .about,
 .service {
   background: #840E0E;
@@ -150,7 +152,8 @@ img {
 }
 
 .about::before,
-.service::before {
+.service::before,
+.blog::before {
   content: "";
   position: absolute;
   top: 0;
@@ -165,6 +168,14 @@ img {
   border-color: transparent transparent #840E0E transparent;
   border-top-width: 0;
   border-bottom-width: 45px;
+}
+
+.blog::before {
+  top: -45px;
+  border-color: transparent transparent #151515 transparent;
+  border-top-width: 0;
+  border-bottom-width: 45px;
+  border-left-width: 100vw;
 }
 
 .about::after,
@@ -194,7 +205,8 @@ img {
 }
 
 .about > button,
-.service > button {
+.service > button,
+.blog > button {
   width: 122px;
   display: block;
   margin: 0 auto;
@@ -249,3 +261,32 @@ button::after {
   margin-bottom: 60px;
 }
 
+/* ブログ */
+.blog {
+  padding-top: 40px;
+  position: relative;
+}
+.card {
+  width: 325px;
+  padding: 25px 25px 30px;
+  margin: 0 auto 30px;
+  background: #D5D5D5;
+}
+
+.card__img {
+  width: 275px;
+}
+
+.card__img,
+.card__ttl {
+  margin-bottom: 14px;
+}
+
+.card__ttl,
+.card__text {
+  color: #000;
+}
+
+.card__text {
+  line-height: 1.5;
+}
