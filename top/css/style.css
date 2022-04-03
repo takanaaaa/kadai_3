@@ -146,7 +146,8 @@ img {
 
 /* わいず祭りについて（section-about） */
 .about,
-.service {
+.service,
+.access {
   background: #840E0E;
   position: relative;
 }
@@ -179,7 +180,8 @@ img {
 }
 
 .about::after,
-.service::after {
+.service::after,
+.blog::after {
   content: "";
   position: absolute;
   bottom: -45px;
@@ -192,6 +194,10 @@ img {
 
 .service::after {
   border-left-width: 100vw;
+}
+
+.blog::after {
+  border-color: #151515 transparent transparent transparent;
 }
 
 .about > p {
@@ -289,4 +295,63 @@ button::after {
 
 .card__text {
   line-height: 1.5;
+}
+
+/* アクセス */
+.access {
+  padding-bottom: 90px;
+}
+
+iframe {
+  width: calc(100% - 50px);
+  height: 244px;
+  margin: 0 25px 30px;
+}
+
+.access__info {
+  margin: 0 25px;
+}
+
+.access__info th,
+.access__info td {
+  display: block;
+  font-size: 14px;
+}
+
+.access__info th {
+  width: 77px;
+  background: #151515;
+  color: #F4F4F4;
+  padding: 5.5px;
+  margin-bottom: 14px;
+  border-radius: 0 10px 10px 0;
+}
+
+.access__info td {
+  color: #F4F4F4;
+}
+
+.access__info tr:not(:last-of-type) td {
+  margin-bottom: 30px;
+}
+
+footer {
+  background: #151515;
+  padding: 30px 30px 20px;
+  border-top: 1px solid #fff;
+  font-size: 12px;
+  text-align: center;
+}
+
+footer ul {
+  color: #F4F4F4;
+  text-decoration: underline;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+footer li a,
+footer p {
+  font-family: 'Noto Sans JP', sans-serif;
 }
