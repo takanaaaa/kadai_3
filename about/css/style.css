@@ -1,0 +1,115 @@
+main {
+  background: #191919;
+  padding-bottom: 90px;
+}
+
+.fv {
+  position: relative;
+}
+
+.fv__text {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  background: #191919;
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+.fv__img {
+  width: 100%;
+  height: 215px;
+  background: no-repeat center center/cover;
+  background-image: url(../../common/img/top_fv01.png);
+}
+
+.about__text {
+  font-size: 14px;
+  margin: 60px 25px 40px;
+}
+
+
+.eyechatching {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  opacity: .8;
+  background: no-repeat center center/cover;
+  background-image: url(../../common/img/about_eye-catching.jpeg);
+}
+
+.eyechatching::before,
+.eyechatching::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  border-style: solid;
+  border-color: #151515 transparent transparent transparent;
+  border-top-width: 45px;
+  border-right-width: 100vw;
+}
+
+.eyechatching::after {
+  bottom: 0;
+  border-color: transparent transparent #151515 transparent;
+  border-bottom-width: 45px;
+}
+
+.greeting h1 {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.tab-panel {
+  margin: 0 25px;
+  background: #151515;
+}
+
+.tab-group {
+  display: flex;
+  justify-content: center;
+}
+
+.tab {
+  padding: 4.5px 0;
+  flex-grow: 1;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  color: #D5D5D5;
+}
+
+.panel-group {
+  background: #840E0E;
+}
+
+.panel {
+  display: none;
+  padding: 30px 25px 60px;
+}
+
+.panel > p {
+  font-size: 14px;
+  margin-bottom: 1.5em;
+}
+
+.panel > p:last-of-type {
+  text-align: end;
+}
+
+.tab.is-active {
+  background: #840E0E;
+  color: #FFF;
+  transition: all .2s ease-out;
+}
+
+.panel.is-show {
+  display: block;
+}
+
+.player {
+	width: 100%;
+	height: 57vw;
+}
