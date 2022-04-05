@@ -136,6 +136,11 @@ main {
   user-select: none;
 }
 
+.pagination__item.is-active {
+  border-color: #840E0E;
+  background: #840E0E;
+}
+
 .pagination__item.dots {
   border: none;
 }
