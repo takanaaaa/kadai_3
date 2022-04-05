@@ -27,7 +27,15 @@ $(function(){
 $(function(){
 	$('.service-slider').slick({
 		autoplay: true,
-    slidesToShow: 2.3,
-    centerMode: true
+    slidesToShow: 5,
+    arrows: false,
+    responsive: [{
+      breakpoint: 375,
+      settings: {
+        centerMode: true,
+        slidesToShow: 2.3,
+      }
+    }
+    ]
 	});
 });
