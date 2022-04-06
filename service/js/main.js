@@ -16,7 +16,7 @@ function toggle() {
 }
 $(function(){
 	$('.slider').slick({
-		autoplay: true,
+		// autoplay: true,
 		prevArrow: '<figure class="prev"></figure>',
 		nextArrow: '<figure class="next"></figure>'
 	});
