@@ -22,7 +22,7 @@ main {
   width: 100%;
   height: 215px;
   background: no-repeat center center/cover;
-  background-image: url(../../common/img/top_fv01.png);
+  background-image: url(../../common/img/about_fv.png);
 }
 
 .about__text {
@@ -30,6 +30,9 @@ main {
   margin: 60px 25px 40px;
 }
 
+.br-sp {
+  display: none;
+}
 
 .eyechatching {
   width: 100%;
@@ -57,8 +60,11 @@ main {
   border-bottom-width: 45px;
 }
 
+.greeting {
+  padding-top: 40px;
+}
+
 .greeting h1 {
-  margin-top: 40px;
   margin-bottom: 60px;
 }
 
@@ -112,4 +118,82 @@ main {
 .player {
 	width: 100%;
 	height: 57vw;
+}
+
+@media screen and (min-width: 376px) and (max-width: 1920px){
+  main {
+    padding-bottom: 200px;
+  }
+  .fv {
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+
+  .fv__text {
+    background: #191919;
+    padding: 10px 0;
+    font-size: 32px;
+  }
+
+  .fv__img {
+    height: 360px;
+  }
+
+  .about__text {
+    font-size: 20px;
+    text-align: center;
+    line-height: 2;
+    margin: 90px auto 200px;
+  }
+
+  .br-sp {
+    display: block;
+  }
+
+  .eyechatching {
+    width: 100%;
+    height: 800px;
+    opacity: .8;
+  }
+
+  .eyechatching::before,
+  .eyechatching::after {
+    border-top-width: 100px;
+    border-right-width: 1920px;
+  }
+
+  .eyechatching::after {
+    border-bottom-width: 100px;
+  }
+
+  .greeting {
+    padding-top: 200px;
+  }
+
+  .tab-panel {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .tab {
+    padding: 10px 0;
+    font-size: 24px;
+  }
+
+  .panel {
+    padding: 60px 30px;
+  }
+
+  .panel > p {
+    font-size: 20px;
+  }
+  
+  footer {
+    padding-bottom: 60px;
+  }
+
+  footer ul {
+    width: 336px;
+    margin: 0 auto 12px;
+  }
 }

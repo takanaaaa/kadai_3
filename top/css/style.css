@@ -294,12 +294,17 @@ iframe {
     border-left-width: 1920px;
   }
 
-  .about::after,
   .service::after,
   .blog::after {
     bottom: -100px;
     border-top-width: 100px;
     border-left-width: 1920px;
+  }
+
+  .about::after {
+    bottom: -100px;
+    border-top-width: 100px;
+    border-right-width: 1920px;
   }
 
   .news {
