@@ -1,6 +1,7 @@
-main {
-  background: #191919;
-  padding-bottom: 90px;
+@charset "UTF-8";
+
+.ttl__sub {
+  display: none;
 }
 
 .fv {
@@ -9,12 +10,12 @@ main {
 
 .fv__text {
   width: 100%;
+  padding: 10px 0;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   text-align: center;
   background: #191919;
-  padding: 10px 0;
   font-size: 20px;
 }
 
@@ -30,16 +31,8 @@ main {
   margin: 60px 25px 40px;
 }
 
-.br-sp {
-  display: none;
-}
-
 .eyechatching {
-  width: 100%;
-  height: 300px;
   position: relative;
-  opacity: .8;
-  background: no-repeat center center/cover;
   background-image: url(../../common/img/about_eye-catching.jpeg);
 }
 
@@ -47,11 +40,14 @@ main {
 .eyechatching::after {
   content: "";
   position: absolute;
-  top: 0;
   border-style: solid;
+  border-right-width: 100vw;
+}
+
+.eyechatching::before {
+  top: 0;
   border-color: #151515 transparent transparent transparent;
   border-top-width: 45px;
-  border-right-width: 100vw;
 }
 
 .eyechatching::after {
@@ -62,24 +58,26 @@ main {
 
 .greeting {
   padding-top: 40px;
+  padding-bottom: 90px;
 }
 
 .greeting h1 {
   margin-bottom: 60px;
 }
 
-.tab-panel {
+.tab {
   margin: 0 25px;
   background: #151515;
 }
 
-.tab-group {
+.tab__group {
+  height: 28px;
   display: flex;
   justify-content: center;
 }
 
-.tab {
-  padding: 4.5px 0;
+.tab__group-item {
+  line-height: 28px;
   flex-grow: 1;
   text-align: center;
   cursor: pointer;
@@ -87,31 +85,30 @@ main {
   color: #D5D5D5;
 }
 
-.panel-group {
+.panel__group {
   background: #840E0E;
 }
 
-.panel {
+.panel__group--item {
   display: none;
   padding: 30px 25px 60px;
 }
 
-.panel > p {
+.panel__group--item > p {
   font-size: 14px;
   margin-bottom: 1.5em;
 }
 
-.panel > p:last-of-type {
+.panel__group--item > p:last-of-type {
   text-align: end;
 }
 
-.tab.is-active {
+.tab__group-item.is-active {
   background: #840E0E;
-  color: #FFF;
   transition: all .2s ease-out;
 }
 
-.panel.is-show {
+.panel__group--item.is-show {
   display: block;
 }
 
@@ -122,8 +119,31 @@ main {
 
 @media screen and (min-width: 376px) and (max-width: 1920px){
   main {
-    padding-bottom: 200px;
+    padding-top: 60px;
   }
+
+  .ttl__sub {
+    width: 1000px;
+    display: block;
+    margin: 0 auto 30px;
+  }
+
+  .ttl__sub a {
+    text-decoration: underline;
+  }
+
+  .ttl__sub a,
+  .ttl__sub span {
+    color: #D5D5D5;
+    font-size: 14px;
+  }
+
+  .ttl__sub span::before {
+    content: "\03e";
+    margin: 0 10px;
+    color: #D5D5D5;
+  }
+
   .fv {
     margin: 0 auto;
     max-width: 1000px;
@@ -142,18 +162,7 @@ main {
   .about__text {
     font-size: 20px;
     text-align: center;
-    line-height: 2;
     margin: 90px auto 200px;
-  }
-
-  .br-sp {
-    display: block;
-  }
-
-  .eyechatching {
-    width: 100%;
-    height: 800px;
-    opacity: .8;
   }
 
   .eyechatching::before,
@@ -168,32 +177,34 @@ main {
 
   .greeting {
     padding-top: 200px;
-  }
-
-  .tab-panel {
-    width: 1000px;
-    margin: 0 auto;
+    padding-bottom: 200px;
   }
 
   .tab {
-    padding: 10px 0;
-    font-size: 24px;
+    width: 1000px;
+    margin: 0 auto;
+    border: 0.5px solid #D5D5D5;
   }
 
-  .panel {
+  .tab__group {
+    height: 55px;
+  }
+
+  .tab__group-item {
+    line-height: 55px;
+    font-size: 24px;
+    border: 0.5px solid #D5D5D5;
+  }
+
+  .tab__group-item.is-active {
+    border: none;
+  }
+
+  .panel__group--item {
     padding: 60px 30px;
   }
 
-  .panel > p {
+  .panel__group--item > p {
     font-size: 20px;
-  }
-  
-  footer {
-    padding-bottom: 60px;
-  }
-
-  footer ul {
-    width: 336px;
-    margin: 0 auto 12px;
   }
 }
