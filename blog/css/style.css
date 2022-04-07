@@ -1,8 +1,6 @@
 @charset "UTF-8";
-
-main {
-  background: #191919;
-  padding-bottom: 90px;
+.ttl__sub {
+  display: none;
 }
 
 .fv {
@@ -19,6 +17,7 @@ main {
   padding: 10px 0;
   font-size: 20px;
 }
+
 .fv__img {
   width: 100%;
   height: 215px;
@@ -40,11 +39,7 @@ main {
 }
 
 .eyechatching {
-  width: 100%;
-  height: 300px;
   position: relative;
-  opacity: .8;
-  background: no-repeat center center/cover;
   background-image: url(../../common/img/blog_eye-catching.jpeg);
 }
 
@@ -65,9 +60,14 @@ main {
   border-bottom-width: 45px;
 }
 
+.blog {
+  padding-top: 40px;
+  padding-bottom: 90px;
+}
+
 .blog__tab {
   width: 325px;
-  margin: 40px auto 57px;
+  margin: 0 auto 57px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -90,11 +90,12 @@ main {
   font-size: 14px;
   line-height: 28px;
 }
+
 .blog__tab--item:not(:nth-child(3n+1)) {
   margin-bottom: 20px;
 }
 
-.is-active {
+.blog__tab--item.is-active {
   border-color: #840E0E ;
   background: #840E0E ;
 }
@@ -181,8 +182,31 @@ main {
 
 @media screen and (min-width: 376px) and (max-width: 1920px){
   main {
-    padding-bottom: 200px;
+    margin-top: 60px;
   }
+
+  .ttl__sub {
+    width: 1000px;
+    display: block;
+    margin: 0 auto 30px;
+  }
+
+  .ttl__sub a {
+    text-decoration: underline;
+  }
+
+  .ttl__sub a,
+  .ttl__sub span {
+    color: #D5D5D5;
+    font-size: 14px;
+  }
+
+  .ttl__sub span::before {
+    content: "\03e";
+    margin: 0 10px;
+    color: #D5D5D5;
+  }
+
   .fv {
     margin: 0 auto;
     max-width: 1000px;
@@ -203,20 +227,13 @@ main {
     text-align: center;
     line-height: 2;
   }
-  
+
   .blog__text:first-of-type {
     margin: 90px auto 1.5em;
   }
 
   .blog__text:last-of-type {
     margin: 0 auto 200px;
-  }
-
-
-  .eyechatching {
-    width: 100%;
-    height: 800px;
-    opacity: .8;
   }
 
   .eyechatching::before,
@@ -229,9 +246,15 @@ main {
     border-bottom-width: 100px;
   }
 
+  .blog {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
   .blog__tab {
     width: 442px;
     height: 32px;
+    margin-bottom: 60px;
     gap: 0;
     justify-content: space-between;
   }
@@ -257,15 +280,6 @@ main {
   .pagination {
     width: 450px;
     margin: 120px auto 0;
-  }
-
-  footer {
-    padding-bottom: 60px;
-  }
-
-  footer ul {
-    width: 336px;
-    margin: 0 auto 12px;
   }
 }
 
