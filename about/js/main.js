@@ -1,3 +1,5 @@
+'use strict'
+
 document.getElementById('hamburger-btn').addEventListener('click', hamburger, false);
 
 function hamburger() {
@@ -13,19 +15,17 @@ function toggle() {
   content.classList.toggle('is-open');
 }
 
-const tabs = document.querySelectorAll('.tab')
+const tabs = document.querySelectorAll('.tab__group-item')
 for(let i = 0; i < tabs.length; i++) {
   tabs[i].addEventListener('click', tabSwitch);
 }
 
 function tabSwitch() {
-  document.getElementsByClassName('is-active')[0].classList.remove('is-active');
+  document.getElementsByClassName('is-active')[1].classList.remove('is-active');
   this.classList.add('is-active');
 
   document.getElementsByClassName('is-show')[0].classList.remove('is-show');
-  // tabs の中身を配列に形成し直して新しい定数に代入する
   const arrayTabs = Array.prototype.slice.call(tabs);
-  // クリックしたインデックス番号を取得
   const index = arrayTabs.indexOf(this);
-  document.getElementsByClassName('panel')[index].classList.add('is-show');
+  document.getElementsByClassName('panel__group--item')[index].classList.add('is-show');
 }
