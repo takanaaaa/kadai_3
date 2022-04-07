@@ -22,40 +22,46 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="head">
-    <img src="../common/img/logo.png" alt="ロゴ" class="head__logo">
-    <div id="hamburger-btn" class="hamburger">
-      <span class="hamburger__inner line1" id="js-line1"></span>
-      <span class="hamburger__inner line2" id="js-line2"></span>
-      <span class="hamburger__inner line3" id="js-line3"></span>
+  <header>
+    <div class="head">
+      <img src="../common/img/logo.png" alt="ロゴ" class="head__logo">
+      <div id="hamburger-btn" class="hamburger">
+        <span class="hamburger__inner line1" id="js-line1"></span>
+        <span class="hamburger__inner line2" id="js-line2"></span>
+        <span class="hamburger__inner line3" id="js-line3"></span>
+      </div>
+      <nav id="nav">
+        <ul class="nav__list">
+          <li class="nav__list--item" onclick="location.href='../about/index.html'">わいず祭りについて</li>
+          <li class="nav__list--item" onclick="location.href='../service/index.html'">屋台一覧</li>
+          <li class="nav__list--item" onclick="location.href='../blog/index.html'">ブログ</li>
+          <li class="nav__list--item is-active" onclick="location.href='../access/index.html'">アクセス</li>
+        </ul>
+        <ul class="icon__list">
+          <li class="icon__list--img">
+            <img src="../common/img/icon_tw.png" alt="twitterアイコン">
+          </li>
+          <li class="icon__list--img">
+            <img src="../common/img/icon_fb.png" alt="facebookアイコン">
+          </li>
+          <li class="icon__list--img">
+            <img src="../common/img/icon_yt.png" alt="youtubeアイコン">
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav id="nav">
-      <ul class="nav__list">
-        <li class="nav__list--item">わいず祭りについて</li>
-        <li class="nav__list--item">屋台一覧</li>
-        <li class="nav__list--item">ブログ</li>
-        <li class="nav__list--item">アクセス</li>
-      </ul>
-      <ul class="icon__list">
-        <li class="icon__list--img">
-          <img src="../common/img/icon_tw.png" alt="twitterアイコン">
-        </li>
-        <li class="icon__list--img">
-          <img src="../common/img/icon_fb.png" alt="facebookアイコン">
-        </li>
-        <li class="icon__list--img">
-          <img src="../common/img/icon_yt.png" alt="youtubeアイコン">
-        </li>
-      </ul>
-    </nav>
   </header>
   <main>
+    <div class="ttl__sub">
+      <a href="../top/index.html">TOP</a>
+      <span>アクセス</span>
+    </div>
     <div class="fv">
       <h1 class="fv__text">アクセス</h1>
       <div class="fv__img"></div>
     </div>
     <p class="access__text">
-      わいず祭りに参加していただくためのアクセス情報です。<br class="br-sp">電車やバスはもちろん、お車でのお越しも歓迎です。
+      わいず祭りに参加していただくためのアクセス情報です。<br class="br-pc">電車やバスはもちろん、お車でのお越しも歓迎です。
     </p>
     <p class="access__text">
       皆さまがスムーズにわいず祭りにお越しくださるようにお手伝いさせていただきます。

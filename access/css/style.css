@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-main {
-  padding-bottom: 90px;
+.ttl__sub {
+  display: none;
 }
 
 .fv {
@@ -39,16 +39,8 @@ main {
   margin-bottom: 40px;
 }
 
-.br-sp {
-  display: none;
-}
-
 .eyechatching {
-  width: 100%;
-  height: 300px;
   position: relative;
-  opacity: .8;
-  background: no-repeat center center/cover;
   background-image: url(../../common/img/access_eye-catching.jpeg);
 }
 
@@ -71,6 +63,7 @@ main {
 
 .map {
   padding-top: 37px;
+  padding-bottom: 90px;
 }
 
 iframe {
@@ -108,9 +101,31 @@ iframe {
 
 @media screen and (min-width: 376px) and (max-width: 1920px){
   main {
-    padding-bottom: 200px;
+    padding-top: 60px;
   }
-  
+
+  .ttl__sub {
+    width: 1000px;
+    display: block;
+    margin: 0 auto 30px;
+  }
+
+  .ttl__sub a {
+    text-decoration: underline;
+  }
+
+  .ttl__sub a,
+  .ttl__sub span {
+    color: #D5D5D5;
+    font-size: 14px;
+  }
+
+  .ttl__sub span::before {
+    content: "\03e";
+    margin: 0 10px;
+    color: #D5D5D5;
+  }
+
   .fv {
     margin: 0 auto;
     max-width: 1000px;
@@ -129,7 +144,6 @@ iframe {
   .access__text {
     font-size: 20px;
     text-align: center;
-    line-height: 2;
   }
 
   .access__text:first-of-type {
@@ -138,16 +152,6 @@ iframe {
 
   .access__text:last-of-type {
     margin-bottom: 200px;
-  }
-
-  .br-sp {
-    display: block;
-  }
-
-  .eyechatching {
-    width: 100%;
-    height: 800px;
-    opacity: .8;
   }
 
   .eyechatching::before,
@@ -162,8 +166,9 @@ iframe {
 
   .map {
     padding-top: 200px;
+    padding-bottom: 200px;
   }
-  
+
   iframe {
     width: 1000px;
     height: 751px;
@@ -175,6 +180,7 @@ iframe {
     width: 1000px;
     margin: 0 auto;
   }
+
   .access__info th,
   .access__info td {
     display: inline-block;
@@ -190,10 +196,6 @@ iframe {
     width: 42%;
     padding: 5.5px 0 5.5px 16px;
     border-bottom: 1px solid #840E0E;
-  }
-
-  .access__info .br-sp {
-    display: none;
   }
 
 }
