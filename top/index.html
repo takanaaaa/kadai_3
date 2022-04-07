@@ -22,45 +22,47 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="head">
-    <img src="../common/img/logo.png" alt="ロゴ" class="head__logo">
-    <div id="hamburger-btn" class="hamburger">
-      <span class="hamburger__inner line1" id="js-line1"></span>
-      <span class="hamburger__inner line2" id="js-line2"></span>
-      <span class="hamburger__inner line3" id="js-line3"></span>
+  <header>
+    <div class="head">
+      <img src="../common/img/logo.png" alt="ロゴ" class="head__logo">
+      <div id="hamburger-btn" class="hamburger">
+        <span class="hamburger__inner line1" id="js-line1"></span>
+        <span class="hamburger__inner line2" id="js-line2"></span>
+        <span class="hamburger__inner line3" id="js-line3"></span>
+      </div>
+      <nav id="nav">
+        <ul class="nav__list">
+          <li class="nav__list--item" onclick="location.href='../about/index.html'">わいず祭りについて</li>
+          <li class="nav__list--item" onclick="location.href='../service/service.html'">屋台一覧</li>
+          <li class="nav__list--item" onclick="location.href='../blog/index.html'">ブログ</li>
+          <li class="nav__list--item" onclick="location.href='../access/index.html'">アクセス</li>
+        </ul>
+        <ul class="icon__list">
+          <li class="icon__list--img">
+            <img src="../common/img/icon_tw.png" alt="twitterアイコン">
+          </li>
+          <li class="icon__list--img">
+            <img src="../common/img/icon_fb.png" alt="facebookアイコン">
+          </li>
+          <li class="icon__list--img">
+            <img src="../common/img/icon_yt.png" alt="youtubeアイコン">
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav id="nav">
-      <ul class="nav__list">
-        <li class="nav__list--item">わいず祭りについて</li>
-        <li class="nav__list--item">屋台一覧</li>
-        <li class="nav__list--item">ブログ</li>
-        <li class="nav__list--item">アクセス</li>
-      </ul>
-      <ul class="icon__list">
-        <li class="icon__list--img">
-          <img src="../common/img/icon_tw.png" alt="twitterアイコン">
-        </li>
-        <li class="icon__list--img">
-          <img src="../common/img/icon_fb.png" alt="facebookアイコン">
-        </li>
-        <li class="icon__list--img">
-          <img src="../common/img/icon_yt.png" alt="youtubeアイコン">
-        </li>
-      </ul>
-    </nav>
   </header>
   <main>
-    <section class="js-slider">
-      <div class="slider-box">
+    <section class="slider">
+      <div class="slider__box">
         <img src="../common/img/top_fv01.png" alt="トップ画像1">
       </div>
-      <div class="slider-box">
+      <div class="slider__box">
         <img src="../common/img/top_fv02.png" alt="トップ画像2">
       </div>
-      <div class="slider-box">
+      <div class="slider__box">
         <img src="../common/img/top_fv03.png" alt="トップ画像3">
       </div>
-      <div class="slider-box">
+      <div class="slider__box">
         <img src="../common/img/top_fv04.png" alt="トップ画像4">
       </div>
     </section>
@@ -94,18 +96,19 @@
           100年以上の歴史のある夏祭り「わいず祭り」。
         </p>
         <p>
-          様々な屋台と夏の夜を飾る花火がわいず祭りの最大の特徴。
+          様々な屋台と夏の夜を飾る花火が<br class="br-sp">
+          わいず祭りの最大の特徴。
         </p>
         <p>
-          変わらない文化と変わっていく時代の中で<br>
-          わいず祭りは毎年、「夏の風流」を<br>
+          変わらない文化と変わっていく時代の中で<br class="br-sp">
+          わいず祭りは毎年、「夏の風流」を<br class="br-sp">
           お届けしております。
         </p>
         <p>
           みなさまにとって一夏の大切な思い出と<br>
           なりますことを願っております。
         </p>
-        <button>もっと見る</button>
+        <button onclick="location.href='../about/index.html'">もっと見る</button>
       </div>
       <div class="about__img">
         <img src="../common/img/top_about01.png" alt="わいず祭りについて画像1" class="img1">
@@ -117,9 +120,9 @@
     <section class="service">
       <h1>屋台一覧</h1>
       <p>
-        わいず祭りの特徴の一つでもある屋台（露店）。<br class="br-sp">本殿までの一本道には、様々なジャンルの食べ歩きができる飲食系出店やお子さんとも楽しめる屋台まで数多く並んでいます。
+        わいず祭りの特徴の一つでもある屋台（露店）。<br class="br-pc">本殿までの一本道には、様々なジャンルの食べ歩きができる飲食系出店やお子さんとも楽しめる屋台まで数多く並んでいます。
       </p>
-      <button>もっと見る</button>
+      <button onclick="location.href='../service/index.html'">もっと見る</button>
       <figure class="service-slider">
         <div class="slider-box">
           <img src="../common/img/service_item-01.jpeg" alt="トップ画像1">
@@ -166,7 +169,8 @@
             <h2 class="card__item--ttl">夏の風物詩、線香花火の豆知識</h2>
             <p class="card__item--text">
               &emsp;夏といえば線香花火、線香花火といえば夏。夏の夜、足元を優しく彩る小さな花火は儚くも美しいひと時を与えてくれます。<br>
-              そんな線香花火には、実はあまり知られていないことが数多く存在します。今回は…
+              そんな線香花火には、実はあまり知られていないことが数多く存在します。今回は、その中から選りすぐりの豆知識3選を紹介していきます。<br>
+              まず一つ目は、線香花火ならではの知識です。手持ち花火の中に必ず入っている線香花火で…
             </p>
           </div>
         </div>
@@ -176,7 +180,8 @@
             <h2 class="card__item--ttl">夏祭りにはやっぱり浴衣！今年おすすめの柄をすべて紹介</h2>
             <p class="card__item--text">
               &emsp;夏祭りに浴衣を着ていくとやっぱり気持ちも明るく、楽しい気持ちになりますよね。綺麗な着付けと華やかな柄が夏祭りを更に良いものにしてくれそうです！<br>
-              最近では、男性も浴衣を着る方も増えて…
+              最近では、男性も浴衣を着る方も増えてカップルで歩いている姿も見かけるようになりました。<br>
+              &emsp;今回は、今年おすすめの流行色から柄に使われている花の種類まで細かく紹介していきま…
             </p>
           </div>
         </div>
@@ -185,12 +190,13 @@
           <div class="card__item">
             <h2 class="card__item--ttl">毎年恒例の打ち上げ花火。歴代の名花火を紹介</h2>
             <p class="card__item--text">
-              &emsp;わいず祭り恒例の打ち上げ花火。毎年400発を超える規模の花火が打ち上がります。わいず祭りで花火が打ち上がるようになったのは、実は第30回の祭りから。当時、町内会長の息子さんが花火職人をや…
+              &emsp;わいず祭り恒例の打ち上げ花火。毎年400発を超える規模の花火が打ち上がります。わいず祭りで花火が打ち上がるようになったのは、実は第30回の祭りから。当時、町内会長の息子さんが花火職人をやっていたことがきっかけとなり、その後70年以上続くわいず祭りのシンボルの一つになっています。<br>
+              &emsp;今回は、これまでの打ち上げ花火の中でも至極の年となった歴史に残る名花火を振り返っ…
             </p>
           </div>
         </div>
       </article>
-      <button>もっと見る</button>
+      <button onclick="location.href='../blog/index.html'">もっと見る</button>
     </section>
     <section class="access">
       <h1>アクセス</h1>
