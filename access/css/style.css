@@ -195,12 +195,4 @@ iframe {
     display: none;
   }
 
-  footer {
-    padding-bottom: 60px;
-  }
-
-  footer ul {
-    width: 336px;
-    margin: 0 auto 12px;
-  }
 }
